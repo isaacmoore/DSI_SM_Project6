@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 9300.16.0606.1812                                -->
+<workbook source-build='9.3.3 (9300.16.0606.1812)' source-platform='mac' version='9.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='imdb_top25' inline='true' name='textscan.185notq110977519n12b30tma2w6' version='9.3'>
+      <connection class='textscan' directory='/Users/isaacmoore/Google Drive/data_science/general_assembly/Projects/DSI_SM_Project6' filename='imdb_top25.csv' password='' server=''>
+        <relation name='imdb_top25.csv' table='[imdb_top25#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='num_votes' ordinal='1' />
+            <column datatype='real' name='rating' ordinal='2' />
+            <column datatype='string' name='tconst' ordinal='3' />
+            <column datatype='string' name='title' ordinal='4' />
+            <column datatype='integer' name='year' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[imdb_top25.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_votes]</local-name>
+            <parent-name>[imdb_top25.csv]</parent-name>
+            <remote-alias>num_votes</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[imdb_top25.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tconst</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tconst]</local-name>
+            <parent-name>[imdb_top25.csv]</parent-name>
+            <remote-alias>tconst</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[imdb_top25.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[imdb_top25.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[imdb_top25.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Rating (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-1' formula='[rating]' peg='0' size='0.1303' />
+      </column>
+      <column caption='Num Votes' datatype='integer' name='[num_votes]' role='measure' type='quantitative' />
+      <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+      <column caption='Tconst' datatype='string' name='[tconst]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.483478' measure-ordering='alphabetic' measure-percentage='0.516522' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='imdb_top25' name='textscan.185notq110977519n12b30tma2w6' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.185notq110977519n12b30tma2w6'>
+            <column datatype='integer' name='[Rating (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-1' formula='[rating]' peg='0' size='0.1303' />
+            </column>
+            <column-instance column='[rating]' derivation='Count' name='[cnt:rating:qk]' pivot='key' type='quantitative' />
+            <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[textscan.185notq110977519n12b30tma2w6].[cnt:rating:qk]</rows>
+        <cols>[textscan.185notq110977519n12b30tma2w6].[Rating (bin)]</cols>
+        <show-full-range>
+          <column>[textscan.185notq110977519n12b30tma2w6].[Rating (bin)]</column>
+        </show-full-range>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='28'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[textscan.185notq110977519n12b30tma2w6].[none:year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
